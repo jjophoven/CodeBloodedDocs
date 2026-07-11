@@ -9,3 +9,7 @@
 .fa-github {
     filter: invert(1);
 }
+.page__footer .fa-github,
+.author__urls .fa-github {
+    color: #ffffff !important;
+}
