@@ -6,35 +6,32 @@
 #has_children: true
 #title: "Code Blooded Docs"
 #
-#kramdown:
-#  parse_block_html: true
-#
-#aux_links:
-#  "Instagram":
-#    - "https://www.instagram.com/code.blooded.ftc"
-#  "GitHub":
-#    - "https://github.com/BeepBot99/CodeBloodedDecodeV3"
-#  "FTCodeSim":
-#     - "https://github.com/jjophoven/FTCodeSim"
+kramdown:
+  parse_block_html: true
+
+aux_links:
+  "Instagram":
+    - "https://www.instagram.com/code.blooded.ftc"
+  "GitHub":
+    - "https://github.com/BeepBot99/CodeBloodedDecodeV3"
+  "FTCodeSim":
+     - "https://github.com/jjophoven/FTCodeSim"
 
 remote_theme: "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "plum"
 
 title: "Code Blooded"
 description: "FTC Team 12649"
 
-logo: "/assets/images/logo.png"
+#logo: "/assets/images/logo.png"
 
 plugins:
   - jekyll-include-cache
 
-author:
-  name: "Code Blooded"
-
-header:
-  overlay_image: /assets/images/banner.jpg
-  overlay_filter: 0.5
+#header:
+#  overlay_image: /assets/images/banner.jpg
+#  overlay_filter: 0.5
 
 defaults:
   - scope:
