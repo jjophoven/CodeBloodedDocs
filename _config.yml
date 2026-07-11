@@ -1,16 +1,43 @@
-remote_theme: just-the-docs/just-the-docs
+#remote_theme: just-the-docs/just-the-docs
+#
+#color_scheme: dark
+#
+#nav_order: 1
+#has_children: true
+#title: "Code Blooded Docs"
+#
+#kramdown:
+#  parse_block_html: true
+#
+#aux_links:
+#  "Instagram":
+#    - "https://www.instagram.com/code.blooded.ftc"
+#  "GitHub":
+#    - "https://github.com/BeepBot99/CodeBloodedDecodeV3"
+#  "FTCodeSim":
+#     - "https://github.com/jjophoven/FTCodeSim"
 
-color_scheme: dark
+remote_theme: "mmistakes/minimal-mistakes"
 
-nav_order: 1
-has_children: true
-title: "Code Blooded Docs"
+minimal_mistakes_skin: "dark"
 
-kramdown:
-  parse_block_html: true
+title: "Code Blooded"
+description: "FTC Team 12649"
 
-aux_links:
-  "Instagram":
-    - "https://www.instagram.com/code.blooded.ftc"
-  "GitHub":
-    - "https://github.com/TeamFrozenCodeFTC/Black-Ice-Path-Follower"
+logo: "/assets/images/logo.png"
+
+plugins:
+  - jekyll-include-cache
+
+author:
+  name: "Code Blooded"
+
+header:
+  overlay_image: /assets/images/banner.jpg
+  overlay_filter: 0.5
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
