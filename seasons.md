@@ -6,8 +6,6 @@ doc_title: "Seasons"
 permalink: /seasons/
 ---
 
-# Seasons
-
 ##### (Most recent season: Decode 2025-2026)
 ![img_1.png](images/decode.png)
 
