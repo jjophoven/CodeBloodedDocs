@@ -1,5 +1,4 @@
 ---
-layout: on-this-page
 title: "Code Blooded - FTC 12649"
 nav_order: 1
 toc: false

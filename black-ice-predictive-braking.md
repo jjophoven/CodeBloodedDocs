@@ -1,8 +1,8 @@
 ---
-layout: on-this-page
 title: "Black Ice: The Origin of Predictive Braking"
 nav_order: 3
 permalink: /black-ice-predictive-braking/
+toc: true
 toc_label: "Versions"
 toc_icon: "cog"
 toc_sticky: true

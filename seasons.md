@@ -1,5 +1,4 @@
 ---
-layout: on-this-page
 title: "Seasons"
 nav_order: 2
 doc_title: "Seasons"
