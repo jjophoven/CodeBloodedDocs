@@ -17,83 +17,83 @@ layout: default
     </div>
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const toc = document.querySelector(".toc");
-  // Only grab the first h1 inside the main content div
-  const firstHeader = document.querySelector(".content h1");
-  const originalParent = toc?.parentNode;
-  const originalNextSibling = toc?.nextSibling;
+<!--<script>-->
+<!--document.addEventListener("DOMContentLoaded", function() {-->
+<!--  const toc = document.querySelector(".toc");-->
+<!--  // Only grab the first h1 inside the main content div-->
+<!--  const firstHeader = document.querySelector(".content h1");-->
+<!--  const originalParent = toc?.parentNode;-->
+<!--  const originalNextSibling = toc?.nextSibling;-->
 
-  function moveTOC() {
-    if (!toc || !firstHeader) return;
+<!--  function moveTOC() {-->
+<!--    if (!toc || !firstHeader) return;-->
 
-    if (window.innerWidth <= 900) {
-      // Only move if it's not already after the header
-      if (firstHeader.nextElementSibling !== toc) {
-        firstHeader.insertAdjacentElement("afterend", toc);
-      }
-    } else {
-      // Put back in the original sidebar location
-      if (originalParent && toc.parentNode !== originalParent) {
-        if (originalNextSibling) {
-          originalParent.insertBefore(toc, originalNextSibling);
-        } else {
-          originalParent.appendChild(toc);
-        }
-      }
-    }
-  }
+<!--    if (window.innerWidth <= 900) {-->
+<!--      // Only move if it's not already after the header-->
+<!--      if (firstHeader.nextElementSibling !== toc) {-->
+<!--        firstHeader.insertAdjacentElement("afterend", toc);-->
+<!--      }-->
+<!--    } else {-->
+<!--      // Put back in the original sidebar location-->
+<!--      if (originalParent && toc.parentNode !== originalParent) {-->
+<!--        if (originalNextSibling) {-->
+<!--          originalParent.insertBefore(toc, originalNextSibling);-->
+<!--        } else {-->
+<!--          originalParent.appendChild(toc);-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+<!--  }-->
 
-  // Run once on load
-  moveTOC();
+<!--  // Run once on load-->
+<!--  moveTOC();-->
 
-  // Throttle resize so it doesn't jump around too much
-  let resizeTimer;
-  window.addEventListener("resize", function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(moveTOC, 150);
-  });
-});
-</script>
+<!--  // Throttle resize so it doesn't jump around too much-->
+<!--  let resizeTimer;-->
+<!--  window.addEventListener("resize", function() {-->
+<!--    clearTimeout(resizeTimer);-->
+<!--    resizeTimer = setTimeout(moveTOC, 150);-->
+<!--  });-->
+<!--});-->
+<!--</script>-->
 
-<style>
-:root {
-    --content-width: 65rem;
-    --total-width: 85rem;
-    --side-bar-width: 16.5rem;
-}
+<!--<style>-->
+<!--:root {-->
+<!--    &#45;&#45;content-width: 65rem;-->
+<!--    &#45;&#45;total-width: 85rem;-->
+<!--    &#45;&#45;side-bar-width: 16.5rem;-->
+<!--}-->
 
-@media (min-width: 901px) {
-  .toc {
-    order: 2;
-    width: 20rem;
-    position: sticky;
-    top: 4rem;
-    max-height: 80vh;
-    overflow: auto;
-      padding: .5rem 1rem;
-      border-left: 1px solid #444;
-    border-radius: 1px;
-    flex-shrink: 0;
-    font-size: medium;
-  }
-  .a {
-    display:flex; align-items:flex-start; gap: 2rem;
-  }
-}
-.main {
-    max-width: 70rem;
-}
-@media (min-width: 85rem) {
-    .side-bar {
-        width:calc((100% - 85rem) / 2 + 16.5rem);
-        min-width: 16.5rem
-    }
-}
-@media (min-width: 85rem) {
-    .side-bar+.main {
-        margin-left: Max(16.5rem, calc((100% - 85rem) / 2 + 16.5rem));
-    }
-}
-</style>
+<!--@media (min-width: 901px) {-->
+<!--  .toc {-->
+<!--    order: 2;-->
+<!--    width: 20rem;-->
+<!--    position: sticky;-->
+<!--    top: 4rem;-->
+<!--    max-height: 80vh;-->
+<!--    overflow: auto;-->
+<!--      padding: .5rem 1rem;-->
+<!--      border-left: 1px solid #444;-->
+<!--    border-radius: 1px;-->
+<!--    flex-shrink: 0;-->
+<!--    font-size: medium;-->
+<!--  }-->
+<!--  .a {-->
+<!--    display:flex; align-items:flex-start; gap: 2rem;-->
+<!--  }-->
+<!--}-->
+<!--.main {-->
+<!--    max-width: 70rem;-->
+<!--}-->
+<!--@media (min-width: 85rem) {-->
+<!--    .side-bar {-->
+<!--        width:calc((100% - 85rem) / 2 + 16.5rem);-->
+<!--        min-width: 16.5rem-->
+<!--    }-->
+<!--}-->
+<!--@media (min-width: 85rem) {-->
+<!--    .side-bar+.main {-->
+<!--        margin-left: Max(16.5rem, calc((100% - 85rem) / 2 + 16.5rem));-->
+<!--    }-->
+<!--}-->
+<!--</style>-->
