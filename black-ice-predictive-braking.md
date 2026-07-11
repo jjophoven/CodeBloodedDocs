@@ -1,5 +1,4 @@
 ---
-layout: on-this-page
 title: "Black Ice: The Origin of Predictive Braking"
 nav_order: 3
 permalink: /black-ice-predictive-braking/
@@ -8,6 +7,8 @@ toc_label: "Versions"
 toc_icon: "cog"
 toc_sticky: true
 ---
+
+<link rel="icon" type="image/png" sizes="64x64" href="../images/codebloodedlogo.png">
 
 ## What is Black Ice?
 Black Ice is the path follower I developed that introduced [predictive braking](https://pedropathing.com/docs/pathing/reference/predictive). The name comes from my former FTC team, Frozen Code, and the robot's sliding behavior while braking. The idea is that, if tuned for black ice, the robot could still navigate a seemingly uncontrollable, slippery surface by predicting how far it would travel before stopping.
