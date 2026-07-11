@@ -1,0 +1,16 @@
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: dark
+
+nav_order: 1
+has_children: true
+title: "Code Blooded Docs"
+
+kramdown:
+  parse_block_html: true
+
+aux_links:
+  "Instagram":
+    - "https://www.instagram.com/code.blooded.ftc"
+  "GitHub":
+    - "https://github.com/TeamFrozenCodeFTC/Black-Ice-Path-Follower"
