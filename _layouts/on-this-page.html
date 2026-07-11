@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class="a" >
-    <div class="toc">
-        <div style="font-size: larger;">
-            {{ page.toc_title | default: "On This Page" }}
-        </div>
-        {% unless page.toc == false %}
-            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 %}
-        {% endunless %}
-    </div>
+<!--    <div class="toc">-->
+<!--        <div style="font-size: larger;">-->
+<!--            {{ page.toc_title | default: "On This Page" }}-->
+<!--        </div>-->
+<!--        {% unless page.toc == false %}-->
+<!--            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 %}-->
+<!--        {% endunless %}-->
+<!--    </div>-->
 
     <div style="flex:1; min-width:0; order: 1;"> 
         {{ content }}
