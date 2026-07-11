@@ -5,3 +5,7 @@
 @import "minimal-mistakes/skins/codeblooded";
 @import "minimal-mistakes";
 @import "custom";
+
+.fa-github {
+    filter: invert(1);
+}
