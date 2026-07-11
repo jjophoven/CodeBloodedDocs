@@ -2,23 +2,23 @@
 layout: on-this-page
 title: "Black Ice: The Origin of Predictive Braking"
 nav_order: 3
-author: Jacob
 permalink: /black-ice-predictive-braking/
 toc: true
 toc_label: "Versions"
 toc_icon: "cog"
+toc_sticky: true
 ---
 
 ## What is Black Ice?
 Black Ice is the path follower I developed that introduced predictive braking. The name comes from my former FTC team, Frozen Code, and the robot's sliding behavior while braking. The idea is that, if tuned for black ice, the robot could still navigate a seemingly uncontrollable, slippery surface by predicting how far it would travel before stopping.
 
-# [v0.5 (December, 2024)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV0.5)
+## [v0.5 (December, 2024)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV0.5)
 
 - Single wheel encoder to estimate linear displacement + IMU for heading lock
 - Once the robot reached the target position, it would set the power to zero on [zero power brake mode](https://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotor.ZeroPowerBehavior.html#BRAKE)
 - Worked very well for simplicity, but was limited to about 50% power because higher speeds caused overshoot and encoder wheel slip.
 
-# [v1.0 (February, 2025)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV1)
+## [v1.0 (February, 2025)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV1)
 #### Switched to dead-wheel odometry so the robot could drive faster without localization slipping.
 
 ### Why Reinvent the Wheel?
@@ -54,12 +54,12 @@ power = error * kProportionalConstant
 
 An [extension of this version](https://github.com/jjophoven/BlackIceV1.5-Experimental-Developement/commit/0d222ad8d032575517fda20ac19eec711f3a541a) also introduced curve following by approximating curves with points spaced 1–2 inches apart.
 
-# [v2.0 (August, 2025)](https://github.com/jjophoven/BlackIceV2-PathRoutines)
+## [v2.0 (August, 2025)](https://github.com/jjophoven/BlackIceV2-PathRoutines)
 
 #### Introduced continuous path following using tangent, perpendicular, and heading vectors similar to Pedro Pathing.
 
 It also supported custom velocity profiles and slower deceleration through PIDFs with momentum compensation.
 
-# [v3.0 (February, 2026)](https://github.com/jjophoven/BlackIceV3-AutoRoutines)
+## [v3.0 (February, 2026)](https://github.com/jjophoven/BlackIceV3-AutoRoutines)
 
 #### Integrated `AutoRoutines` which combined path following with a command-based autonomous library.
