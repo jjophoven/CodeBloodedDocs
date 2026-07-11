@@ -1,4 +1,5 @@
 ---
+layout: on-this-page
 title: "Black Ice: The Origin of Predictive Braking"
 nav_order: 3
 permalink: /black-ice-predictive-braking/
@@ -9,7 +10,7 @@ toc_sticky: true
 ---
 
 ## What is Black Ice?
-Black Ice is the path follower I developed that introduced predictive braking. The name comes from my former FTC team, Frozen Code, and the robot's sliding behavior while braking. The idea is that, if tuned for black ice, the robot could still navigate a seemingly uncontrollable, slippery surface by predicting how far it would travel before stopping.
+Black Ice is the path follower I developed that introduced [predictive braking](https://pedropathing.com/docs/pathing/reference/predictive). The name comes from my former FTC team, Frozen Code, and the robot's sliding behavior while braking. The idea is that, if tuned for black ice, the robot could still navigate a seemingly uncontrollable, slippery surface by predicting how far it would travel before stopping.
 
 ## [v0.5 (December, 2024)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV0.5)
 
@@ -34,7 +35,7 @@ I knew I couldn't just switch to brake mode because the robot would overshoot th
 
 I initially used this braking distance to set the power to zero on [zero power brake mode](https://ftctechnh.github.io/ftc_app/doc/javadoc/com/qualcomm/robotcore/hardware/DcMotor.ZeroPowerBehavior.html#BRAKE) as soon as the distance remaining became less than the braking distance. This worked reasonably well, but it could not correct while braking, so the robot would often turn or drift while sliding.
 
-### Predictive Braking Controller
+### Predictive PID Controller
 
 To eliminate braking drift, I used a proportional controller that controlled the robot's **predicted stopping position** instead of its current position. Rather than asking, "Where am I now?", the controller asked, "Where will I end up if I slam on the brakes right now?"
 
