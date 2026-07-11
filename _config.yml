@@ -23,9 +23,6 @@ minimal_mistakes_skin: "codeblooded"
 
 title: "Code Blooded Docs"
 description: "FTC Team 12649"
-logo: "/images/codebloodedlogo.png"
-
-#logo: "/assets/images/logo.png"
 
 plugins:
   - jekyll-include-cache

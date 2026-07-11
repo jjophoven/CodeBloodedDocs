@@ -19,7 +19,8 @@ Black Ice is the path follower I developed that introduced predictive braking. T
 - Worked very well for simplicity, but was limited to about 50% power because higher speeds caused overshoot and encoder wheel slip.
 
 ## [v1.0 (February, 2025)](https://github.com/jjophoven/FrozenCodeIntoTheDeep-BlackIceV1)
-#### Switched to dead-wheel odometry so the robot could drive faster without localization slipping.
+Switched to dead-wheel odometry so the robot could drive faster without localization slipping.
+{: .notice}
 
 ### Why Reinvent the Wheel?
 Seeing how quickly the robot could stop using zero power brake mode made me question why existing path followers (such as RoadRunner) gradually accelerated and decelerated instead of braking as late as possible. Since dead-wheel odometry measures motion independently of wheel slip, I expected the robot could drive at full power until the last moment before braking.
@@ -56,10 +57,12 @@ An [extension of this version](https://github.com/jjophoven/BlackIceV1.5-Experim
 
 ## [v2.0 (August, 2025)](https://github.com/jjophoven/BlackIceV2-PathRoutines)
 
-#### Introduced continuous path following using tangent, perpendicular, and heading vectors similar to Pedro Pathing.
+Introduced continuous path following using tangent, perpendicular, and heading vectors similar to Pedro Pathing.
+{: .notice}
 
 It also supported custom velocity profiles and slower deceleration through PIDFs with momentum compensation.
 
 ## [v3.0 (February, 2026)](https://github.com/jjophoven/BlackIceV3-AutoRoutines)
 
-#### Integrated `AutoRoutines` which combined path following with a command-based autonomous library.
+Integrated `AutoRoutines` which combined path following with a command-based autonomous library.
+{: .notice}
