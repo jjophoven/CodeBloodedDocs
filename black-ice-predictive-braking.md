@@ -4,6 +4,9 @@ title: "Black Ice: The Origin of Predictive Braking"
 nav_order: 3
 author: Jacob
 permalink: /black-ice-predictive-braking/
+toc: true
+toc_label: "Versions"
+toc_icon: "cog"
 ---
 
 ## What is Black Ice?

@@ -21,8 +21,9 @@ remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: "codeblooded"
 
-title: "Code Blooded"
+title: "Code Blooded Docs"
 description: "FTC Team 12649"
+logo: "/images/codeblooded.png"
 
 #logo: "/assets/images/logo.png"
 
@@ -38,3 +39,27 @@ defaults:
       path: ""
     values:
       layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+footer:
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/code.blooded.ftc"
+    - label: "FTCodeSim"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jjophoven/FTCodeSim"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/BeepBot99/CodeBloodedDecodeV3"
+  since: "2026"
+
+
+author:
+  name             : "Code Blooded"
+  avatar           : "/images/codeblooded.png"
+  location         : "Minneapolis, MN"
