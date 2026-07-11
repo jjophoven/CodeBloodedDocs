@@ -6,16 +6,16 @@
 #has_children: true
 #title: "Code Blooded Docs"
 #
-kramdown:
-  parse_block_html: true
-
-aux_links:
-  "Instagram":
-    - "https://www.instagram.com/code.blooded.ftc"
-  "GitHub":
-    - "https://github.com/BeepBot99/CodeBloodedDecodeV3"
-  "FTCodeSim":
-     - "https://github.com/jjophoven/FTCodeSim"
+#kramdown:
+#  parse_block_html: true
+#
+#aux_links:
+#  "Instagram":
+#    - "https://www.instagram.com/code.blooded.ftc"
+#  "GitHub":
+#    - "https://github.com/BeepBot99/CodeBloodedDecodeV3"
+#  "FTCodeSim":
+#     - "https://github.com/jjophoven/FTCodeSim"
 
 remote_theme: "mmistakes/minimal-mistakes"
 

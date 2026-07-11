@@ -1,7 +1,7 @@
 main:
-- title: "Home"
-  url: /index.md
-- title: "Seasons"
-  url: /seasons.md
-- title: "Black Ice: The Origin of Predictive Braking"
-  url: /black-ice.md
+  - title: "Home"
+    url: /
+  - title: "Seasons"
+    url: /seasons/
+  - title: "Black Ice: The Origin of Predictive Braking"
+    url: /black-ice/
