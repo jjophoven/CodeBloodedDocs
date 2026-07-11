@@ -1,0 +1,38 @@
+/* Masthead */
+.masthead {
+  border-bottom: 2px solid #8A00FF;
+  box-shadow: 0 0 20px rgba(138, 0, 255, 0.35);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px rgba(138, 0, 255, .6);
+}
+
+/* Navigation links */
+.greedy-nav a:hover {
+  color: #A84DFF;
+}
+
+/* Headings */
+.page__title,
+.archive__item-title {
+  color: #C084FC;
+}
+
+/* Code blocks */
+pre,
+code {
+  border-radius: 8px;
+}
+
+/* Purple selection */
+::selection {
+  background: #8A00FF;
+  color: white;
+}
