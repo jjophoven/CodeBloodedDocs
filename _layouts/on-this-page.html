@@ -1,22 +1,28 @@
 ---
-<!--layout: default-->
 layout: single
 ---
 
-<div class="a" >
-<!--    <div class="toc">-->
-<!--        <div style="font-size: larger;">-->
-<!--            {{ page.toc_title | default: "On This Page" }}-->
-<!--        </div>-->
-<!--        {% unless page.toc == false %}-->
-<!--            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 %}-->
-<!--        {% endunless %}-->
-<!--    </div>-->
+{{ content }}
 
-    <div style="flex:1; min-width:0; order: 1;"> 
-        {{ content }}
-    </div>
-</div>
+
+<!-- -&#45;&#45;-->
+<!--layout: default-->
+<!-- -&#45;&#45;-->
+
+<!--<div class="a" >-->
+<!--&lt;!&ndash;    <div class="toc">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div style="font-size: larger;">&ndash;&gt;-->
+<!--&lt;!&ndash;            {{ page.toc_title | default: "On This Page" }}&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        {% unless page.toc == false %}&ndash;&gt;-->
+<!--&lt;!&ndash;            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 %}&ndash;&gt;-->
+<!--&lt;!&ndash;        {% endunless %}&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    <div style="flex:1; min-width:0; order: 1;"> -->
+<!--        {{ content }}-->
+<!--    </div>-->
+<!--</div>-->
 
 <!--<script>-->
 <!--document.addEventListener("DOMContentLoaded", function() {-->
