@@ -56,3 +56,13 @@ author:
   name             : "Code Blooded"
   avatar           : "/images/codebloodedlogo.png"
   location         : "Minneapolis, MN"
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/code.blooded.ftc"
+    - label: "FTCodeSim"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jjophoven/FTCodeSim"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/BeepBot99/CodeBloodedDecodeV3"
