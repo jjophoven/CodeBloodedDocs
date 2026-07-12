@@ -5,14 +5,3 @@
 @import "minimal-mistakes/skins/codeblooded";
 @import "minimal-mistakes";
 @import "custom";
-
-/* 3. TARGET THE INJECTED SVG ELEMENTS FOR THE ICON */
-svg[data-icon="github"] {
-    fill: #ffffff !important;
-}
-
-/* Optional: If you only want it white in the footer and sidebar */
-.page__footer svg[data-icon="github"],
-.author__urls svg[data-icon="github"] {
-    fill: #ffffff !important;
-}

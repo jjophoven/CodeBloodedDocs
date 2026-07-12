@@ -52,5 +52,5 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jjophoven/FTCodeSim"
     - label: "Season Performance"
-      icon: "images/ftcscout.png"
+      icon: "fab fa-fw fa-link"
       url: "https://ftcscout.org/teams/12649"
