@@ -4,6 +4,9 @@ title: "Seasons"
 nav_order: 2
 doc_title: "Seasons"
 permalink: /seasons/
+toc: true
+toc_label: "Seasons"
+toc_sticky: true
 ---
 
 ## Upcoming [2026-27 Biobuzz](https://www.firstinspires.org/programs/ftc/game-and-season)
